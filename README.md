@@ -1,2 +1,4 @@
 # VDS
 Visual Data Structure system
+VDS is used to create a 3D visualization of an existing live dynamic data structure in a C or C++ program. The system consists of three distinct layers. At the bottom is the X3D layer. This creates scenes of 3D solids and writes them to X3D files. X3D is a variant of XML for describing 3D scenes. The middle layer is the VDS objects. These register and then display the data structure using the X3D system. The top layer is the arbitrary C/C++ program that uses dyanamic data structures. Such a user program must register the class/struct of the nodes in the dynamic data structure. It will then ask for a snapshot of the structure, which VDS provides. 
+This system was designed to be compatible with a variety of C++ systems. These are enabled by preprocesser defines.
